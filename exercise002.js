@@ -15,9 +15,10 @@ const fetchData = async (apiEndPoint) => {
 };
 
 fetchData(jsonTypicode);
-const starWarsEpisode2Data = await fetchData(starWarsApi);
 
-const planetsData = starWarsEpisode2Data.planets.map((planetUrl) =>
+const starWarsEpisode4Data = await fetchData(starWarsApi);
+
+const planetsData = starWarsEpisode4Data.planets.map((planetUrl) =>
   fetchData(planetUrl)
 );
 
